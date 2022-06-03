@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src=/static/jquery-3.3.1.js ></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		fv=$("#fv").val();
+		sv=$("#sv").val();
+		$("#fv").val(sv);
+		$("#sv").val(fv);
+	});
+});
+</script>
+</head>
+<body>
+First Value<input type="text" id=fv /><br>
+Second Value<input type="text" id=sv /><br>
+<input type="button" value="Swap" id="btn1" />
+</body>
+</html>

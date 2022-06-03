@@ -1,0 +1,10 @@
+<html>
+<body>
+<form method="post" action="profilesave" enctype="multipart/form-data">
+{% csrf_token %}
+Enter name:<input type="text" name="name" /><br/>
+Enter photo:<input type="file" name="picture" /><br/>
+<input type="submit" value="submit" />
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src=/static/jquery-3.3.1.js ></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		fv=parseInt($("#fv").val());
+		sv=parseInt($("#sv").val());
+		tv=parseInt($("#tv").val());
+		if(fv>sv && fv>tv)
+			alert(fv+" is greatest");
+		else
+		if(sv>tv)
+			alert(sv+" is greatest");
+		else
+			alert(tv+" is greatest");
+	});
+});
+</script>
+</head>
+<body>
+First Value<input type="text" id=fv /><br>
+Second Value<input type="text" id=sv /><br>
+Third Value<input type="text" id=tv /><br>
+<input type="button" value="Ok" id="btn1" />
+</body>
+</html>

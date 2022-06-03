@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/static/bootstrap.min.css" />
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+</head>                         
+<body>
+<h1 align="center">WELCOME {{username}}</h1>
+<div class="navbar navbar-inverse">
+<ul class="nav navbar-nav">
+<li><a href="compose" target="work">Compose</a></li>
+<li><a href="inbox" target="work">Inbox</a></li>
+<li><a href="sent" target="work">Sent</a></li>
+<li><a href="changepassword" target="work">Change Password</a></li>
+<li><a href="signout" target="_parent">Sign Out</a></li>
+</ul>
+</div>
+<iframe name="work" width="100%" height="800"></iframe>
+</body>
+</html>
